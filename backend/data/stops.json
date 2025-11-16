@@ -1,0 +1,51 @@
+[
+  {
+    "id": "msk_city",
+    "name": "Москва",
+    "type": "city",
+    "lat": 55.7558,
+    "lon": 37.6173
+  },
+  {
+    "id": "msk_svo",
+    "name": "Москва (Шереметьево)",
+    "type": "airport",
+    "lat": 55.9726,
+    "lon": 37.4146
+  },
+  {
+    "id": "yak_city",
+    "name": "Якутск",
+    "type": "city",
+    "lat": 62.0355,
+    "lon": 129.6755
+  },
+  {
+    "id": "yak_airport",
+    "name": "Якутск (аэропорт)",
+    "type": "airport",
+    "lat": 62.093,
+    "lon": 129.771
+  },
+  {
+    "id": "yak_station",
+    "name": "Нижний Бестях (ЖД)",
+    "type": "rail_station",
+    "lat": 61.8675,
+    "lon": 129.9564
+  },
+  {
+    "id": "sangar_port",
+    "name": "Сангар (речной порт)",
+    "type": "river_port",
+    "lat": 63.924,
+    "lon": 127.471
+  },
+  {
+    "id": "olekminsk_port",
+    "name": "Олёкминск (речной порт)",
+    "type": "river_port",
+    "lat": 60.374,
+    "lon": 120.406
+  }
+]

@@ -1,0 +1,76 @@
+[
+  {
+    "id": "seg_air_msk_yak",
+    "from_id": "msk_svo",
+    "to_id": "yak_airport",
+    "type": "air",
+    "operator": "Авиакомпания Якутия",
+    "departure": "2025-02-10T07:00:00",
+    "arrival": "2025-02-10T15:20:00",
+    "price": 32000,
+    "delay_risk": 0.35,
+    "source": "demo"
+    
+  },
+  {
+    "id": "seg_rail_msk_yak",
+    "from_id": "msk_city",
+    "to_id": "yak_station",
+    "type": "rail",
+    "operator": "РЖД",
+    "departure": "2025-02-08T20:00:00",
+    "arrival": "2025-02-10T08:00:00",
+    "price": 18000,
+    "delay_risk": 0.10,
+    "source": "demo"
+  },
+  {
+    "id": "seg_ferry_yak_station_city",
+    "from_id": "yak_station",
+    "to_id": "yak_city",
+    "type": "river",
+    "operator": "Паром через реку Лена",
+    "departure": "2025-02-10T08:30:00",
+    "arrival": "2025-02-10T10:00:00",
+    "price": 600,
+    "delay_risk": 0.20,
+    "source": "demo"
+}
+,
+  {
+    "id": "seg_bus_yak_city_from_airport",
+    "from_id": "yak_airport",
+    "to_id": "yak_city",
+    "type": "bus",
+    "operator": "Автобусы Якутии",
+    "departure": "2025-02-10T16:00:00",
+    "arrival": "2025-02-10T17:00:00",
+    "price": 400,
+    "delay_risk": 0.15,
+    "source": "demo"
+  },
+  {
+    "id": "seg_river_yak_sangar",
+    "from_id": "yak_city",
+    "to_id": "sangar_port",
+    "type": "river",
+    "operator": "Речфлот Лена",
+    "departure": "2025-02-10T19:00:00",
+    "arrival": "2025-02-11T09:30:00",
+    "price": 9500,
+    "delay_risk": 0.22,
+    "source": "demo"
+  },
+  {
+    "id": "seg_river_yak_olekminsk",
+    "from_id": "yak_city",
+    "to_id": "olekminsk_port",
+    "type": "river",
+    "operator": "Речфлот Лена",
+    "departure": "2025-02-11T12:00:00",
+    "arrival": "2025-02-12T02:30:00",
+    "price": 11000,
+    "delay_risk": 0.25,
+    "source": "demo"
+  }
+]
