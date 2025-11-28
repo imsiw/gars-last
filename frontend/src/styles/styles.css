@@ -1,0 +1,229 @@
+body { margin: 0; font-family: sans-serif; }
+
+.page-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.search-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+
+.search-box input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.search-box button {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.results-page {
+  display: flex;
+  height: 100vh;
+}
+
+.results-left {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.results-right {
+  position: sticky;
+  top: 80px; /* примерная высота хедера/поиска, можно подстроить */
+  height: calc(100vh - 110px); /* карта почти на весь экран */
+}
+
+.route-card {
+  background: #fafafa;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.results-body {
+  display: grid;
+  grid-template-columns: minmax(320px, 460px) minmax(0, 1fr);
+  gap: 16px;
+  align-items: flex-start;
+  margin-top: 24px;
+}
+
+/* Обёртка карты */
+.map-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.map-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.16);
+}
+
+@media (max-width: 900px) {
+  .results-body {
+    grid-template-columns: 1fr;
+  }
+
+  .results-right {
+    position: static;
+    height: 320px;
+    margin-top: 16px;
+  }
+}
+
+/* Пример, если нужно */
+.hero-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  padding: 40px 24px;
+}
+
+.hero-inner {
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 32px;
+  align-items: center;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero-title {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 16px;
+  color: #64748b;
+}
+
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.hero-badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #e0edff;
+  font-size: 12px;
+  color: #0d5df4;
+}
+
+.hero-search {
+  margin-top: 12px;
+}
+
+.hero-hint {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.hero-right {
+  height: 320px;
+}
+
+.hero-illustration {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  background-size: cover;
+  background-position: center;
+  /* сюда можешь поставить фон-картинку */
+  /* background-image: url("/your-hero-bg.jpg"); */
+  background: radial-gradient(circle at top, #0d5df4 0, #020617 55%);
+}
+
+@media (max-width: 900px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-right {
+    order: -1;
+    height: 220px;
+  }
+}
+
+.hero-section {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image: url("../assets/bg.jpg"); /* или твой файл */
+  background-size: cover;
+  background-position: center;
+}
+
+/* ==== HERO LAYOUT ==== */
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  color: white;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("../assets/bg.jpg"); /* твой фон */
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.55);
+  z-index: -1;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 880px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.hero-text h1 {
+  font-size: 44px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.hero-text p {
+  font-size: 20px;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.hero-card {
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(12px);
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.25);
+}

@@ -1,0 +1,125 @@
+.purchase-details-page {
+  font-family: "Inter", sans-serif;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.purchase-details-container {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.purchase-details-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.purchase-details-subtitle {
+  font-size: 18px;
+  margin-bottom: 32px;
+  color: #6b7280;
+}
+
+.ticket-list {
+  margin-top: 20px;
+}
+
+.ticket-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ticket-header h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a73e8;
+}
+
+.ticket-price {
+  font-size: 18px;
+  color: #4caf50;
+}
+
+.ticket-body {
+  margin-top: 16px;
+}
+
+.ticket-body p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.ticket-body h4 {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #333;
+}
+
+.segment-item {
+  margin-bottom: 16px;
+}
+
+.segment-item .segment-time {
+  font-size: 14px;
+  color: #888;
+}
+
+.segment-item .segment-price {
+  font-size: 16px;
+  color: #4caf50;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.primary-btn {
+  background-color: #1a73e8;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.primary-btn:hover {
+  background-color: #1558b0;
+}
+
+@media (max-width: 768px) {
+  .purchase-details-container {
+    padding: 16px;
+  }
+
+  .purchase-details-title {
+    font-size: 28px;
+  }
+
+  .ticket-header h3 {
+    font-size: 20px;
+  }
+
+  .ticket-body h4 {
+    font-size: 16px;
+  }
+}

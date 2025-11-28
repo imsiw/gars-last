@@ -1,0 +1,7 @@
+.details-container {
+  display: grid;
+  grid-template-columns: 520px 1fr;
+  gap: 20px;
+  padding: 24px 32px;
+}
+.details-right { height: calc(100vh - 170px); }

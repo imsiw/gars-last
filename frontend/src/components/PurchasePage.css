@@ -1,0 +1,155 @@
+/* Layout and box styles */
+.purchase-page {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.purchase-left {
+  width: 55%;
+  padding-right: 20px;
+}
+
+.purchase-right {
+  width: 40%;
+  padding-left: 20px;
+  position: relative;
+}
+
+.risk-box {
+  padding: 20px;
+  background: #fff7ed;
+  border-radius: 15px;
+  border: 1px solid #fed7aa;
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.purchase-summary-card {
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.purchase-title {
+  font-size: 32px !important;
+}
+
+.purchase-subtitle {
+  font-size: 28px !important;
+}
+
+.purchase-section-title {
+  font-size: 32px !important;
+}
+
+.purchase-segment-route {
+  font-size: 24px !important;
+  font-weight: bold;
+}
+
+.purchase-segment-meta {
+  font-size: 20px !important;
+}
+
+.purchase-segment-price {
+  font-size: 22px !important;
+  font-weight: bold;
+  color: #000;
+}
+
+.purchase-field label {
+  font-size: 24px !important;
+  font-weight: bold;
+}
+
+.purchase-field input {
+  font-size: 20px !important;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  width: 100%;
+}
+
+.purchase-field input:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+.purchase-summary-card h3 {
+  font-size: 30px !important;
+}
+
+.purchase-summary-row {
+  font-size: 22px !important;
+}
+
+.purchase-summary-total {
+  font-size: 28px !important;
+}
+
+.purchase-summary-row span {
+  font-size: 24px !important; 
+}
+
+.primary-btn {
+  font-size: 22px !important; 
+}
+
+.secondary-btn {
+  font-size: 22px !important; 
+}
+
+.risk-box h3 {
+  font-size: 26px !important;
+}
+
+.risk-box p {
+  font-size: 20px !important;
+}
+
+.risk-box span {
+  font-size: 22px !important;
+}
+
+
+.purchase-checkbox-row span {
+  font-size: 18px !important;
+}
+
+@media (max-width: 768px) {
+  .purchase-page {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .purchase-left,
+  .purchase-right {
+    width: 100%;
+    padding: 0;
+  }
+
+  .purchase-title {
+    font-size: 28px;
+  }
+
+  .purchase-summary-total {
+    font-size: 32px;
+  }
+
+  .purchase-summary-row {
+    font-size: 20px;
+  }
+
+  .primary-btn {
+    font-size: 18px;
+  }
+
+  .secondary-btn {
+    font-size: 18px;
+  }
+}
